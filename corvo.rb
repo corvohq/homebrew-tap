@@ -5,21 +5,21 @@
 class Corvo < Formula
   desc "Language-agnostic distributed job processing system"
   homepage "https://corvohq.com"
-  version "0.0.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/corvohq/corvo/releases/download/v0.0.1/corvo_0.0.1_darwin_amd64.tar.gz"
-      sha256 "26f1c430f982a4a78a5953e9ad245344e10e3c9aee0f7bc4b8d4a3b11560ad70"
+      url "https://github.com/corvohq/corvo/releases/download/v0.2.0/corvo_0.2.0_darwin_amd64.tar.gz"
+      sha256 "4345ca56f287604fbee375fd3fb2b0ff33aac653cf383bc4b9b2159f60fe2882"
 
       def install
         bin.install "corvo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/corvohq/corvo/releases/download/v0.0.1/corvo_0.0.1_darwin_arm64.tar.gz"
-      sha256 "3da4f8c8cf3ae5214b9ddfcd9991cddec8fd7122d5ee13c7fe156801ed4ec480"
+      url "https://github.com/corvohq/corvo/releases/download/v0.2.0/corvo_0.2.0_darwin_arm64.tar.gz"
+      sha256 "195a9a6808e4f6739ee6973287f5abbbfc407e7173f51e40f3b7e7d06a12e9dd"
 
       def install
         bin.install "corvo"
@@ -29,15 +29,15 @@ class Corvo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/corvohq/corvo/releases/download/v0.0.1/corvo_0.0.1_linux_amd64.tar.gz"
-      sha256 "f0a4f50506e389de43f6d552d5e303ad14d958c079554b94a5cd8aa87a73085a"
+      url "https://github.com/corvohq/corvo/releases/download/v0.2.0/corvo_0.2.0_linux_amd64.tar.gz"
+      sha256 "774c4f7005c5a0fffa0d3745519087eb64fdbe3ea3f7f9b54ca8c60ab86a1eeb"
       def install
         bin.install "corvo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/corvohq/corvo/releases/download/v0.0.1/corvo_0.0.1_linux_arm64.tar.gz"
-      sha256 "0d2083898307941dd4dda6db955547b73fd3dec77cc1397fb8f9acaea680a082"
+      url "https://github.com/corvohq/corvo/releases/download/v0.2.0/corvo_0.2.0_linux_arm64.tar.gz"
+      sha256 "20eae7f58bce8d4bcbfb45d6d618ba89bba81f7f4e440906328049d88d5c84b5"
       def install
         bin.install "corvo"
       end
