@@ -11,7 +11,7 @@ class Corvo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/corvohq/corvo/releases/download/v0.2.0/corvo_0.2.0_darwin_amd64.tar.gz"
-      sha256 "4345ca56f287604fbee375fd3fb2b0ff33aac653cf383bc4b9b2159f60fe2882"
+      sha256 "4d3a3eb837f3fd6f8185fced18ee40a2ca3b6b64e941c9d8a6d849fd74f72269"
 
       def install
         bin.install "corvo"
@@ -19,7 +19,7 @@ class Corvo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/corvohq/corvo/releases/download/v0.2.0/corvo_0.2.0_darwin_arm64.tar.gz"
-      sha256 "195a9a6808e4f6739ee6973287f5abbbfc407e7173f51e40f3b7e7d06a12e9dd"
+      sha256 "ac207e195d4a43eec4bb8249f6bfba5f4e12003bb7cf653b33994828dbb14ca0"
 
       def install
         bin.install "corvo"
@@ -30,14 +30,14 @@ class Corvo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/corvohq/corvo/releases/download/v0.2.0/corvo_0.2.0_linux_amd64.tar.gz"
-      sha256 "774c4f7005c5a0fffa0d3745519087eb64fdbe3ea3f7f9b54ca8c60ab86a1eeb"
+      sha256 "fb16d678848a1df6a106cfe2840e135925b9088a941fbbd826e1377ce736ee32"
       def install
         bin.install "corvo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/corvohq/corvo/releases/download/v0.2.0/corvo_0.2.0_linux_arm64.tar.gz"
-      sha256 "20eae7f58bce8d4bcbfb45d6d618ba89bba81f7f4e440906328049d88d5c84b5"
+      sha256 "d9ba6e0d639b263912927db92b6f75008169c2a3ac0ad70a12434032e2d128f5"
       def install
         bin.install "corvo"
       end
